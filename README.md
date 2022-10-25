@@ -53,10 +53,7 @@ npm install
 
 ![potentiometer connected to arduino](http://johnny-five.io/img/breadboard/potentiometer.png)
 
-|||
-|-|-|
 |y, en el archivo `index.js`, se le adiciona el envío de mensajes OSC|and, at the `index.js` file, OSC message sending is added|
-|||
 
 |||
 |-|-|
