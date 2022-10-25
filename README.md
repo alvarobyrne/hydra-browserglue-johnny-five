@@ -4,7 +4,7 @@
 # hydra-browserglue-johnny-five
 |||
 |-|-|
-|hydra  ([web][hydra-web-app], [repositorio][hydra-repo]) pegado a arduinousand [browserglue] and [johnny-five]; hydra controlado por arduino/ arduino controlando a hydra |hydra ([web app][hydra-web-app], [repo][hydra-repo]) glued with arduino using [browserglue] and [johnny-five]; hydra controlled by arduino/arduino controlling hydra|
+|hydra  ([web][hydra-web-app], [repositorio][hydra-repo]) pegado a arduinou usando [browserglue] and [johnny-five]; hydra controlado por arduino/ arduino controlando a hydra |hydra ([web app][hydra-web-app], [repo][hydra-repo]) glued with arduino using [browserglue] and [johnny-five]; hydra controlled by arduino/arduino controlling hydra|
 |||
 
 ## 1 browserglue: ejecutable / executable
@@ -92,8 +92,8 @@ window.bg = new browserglue.Client();
 ### 3.3
 |||
 |-|-|
-|Creá un canal de comunicacio'n usando websockect que se comunica con el ejecutable de la sección 1 de este documento | Create a browserglue channel |
-|los valores de la variables variable `address` y  `senderPort` deben coincidir con los valores de las mismas variables en el código del archivo  `index.js` |the values of variables `address` and `sanderPort` must be the same as the values of the same named variables in the `index.js` file.|
+|Las siguientes lineas de código creán un canal de comunicación usando websockect que se comunica con el ejecutable de la sección 1.1 de este documento | The nex portion of code creates a browserglue channel that bridges with the executable refered at section 1.1 above|
+|los valores de la variables `address` y  `senderPort` deben coincidir con los valores de las mismas variables en el código del archivo  `index.js` |the values of variables `address` and `senderPort` must be the same as the values of the variableswith the same name in the `index.js` file.|
 |||
 
 ```js
@@ -105,7 +105,7 @@ channel = await bg.addChannel(address, senderPort);
 ### 3.4
 |||
 |-|-|
-|código que encargado de escuchar los mensajes enviados por el canal y de usar el valor en un boceto de hydra  |code in charge of receiving the websocket messages and use the value receive in hydra functions|
+|código encargado de escuchar los mensajes enviados por el canal y de usar el valor en un boceto de hydra  |code in charge of receiving the websocket messages and use the value received in hydra functions|
 |||
 ```js
 pot=0
@@ -130,7 +130,7 @@ osc(()=>1+pot*200).out()
 
 |||
 |-|-|
-|aunque puede que el boceto no corre adecaudamente al hacerle _click_ al siguiente  _link_ (porque hay que ejecutar ciertas líneas con un retraso entre sí) , ahí está [el código][the code]. Esto pal parecer no es cierto, me ha funcionado | Although the sketch might not run properly when clicking on the following link (since there must be some delay between the execution of some lines) [the code] is there. This might not be true, sometimes it works|
+|aunque puede que el boceto no se ejecute  adecaudamente al hacerle _click_ al siguiente  _link_ (porque hay que ejecutar ciertas líneas con un retraso entre sí) , ahí está [el código][the code]. Esto al parecer no es cierto, me ha funcionado | Although the sketch might not run properly when clicking on the following link (since there must be some delay between the execution of some lines) [the code] is there. This might not be true, sometimes it works|
 |||
 
 
