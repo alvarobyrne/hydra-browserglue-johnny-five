@@ -132,7 +132,7 @@ osc(()=>1+pot*200).out()
 |||
 |-|-|
 |aunque puede que el boceto no se ejecute  adecaudamente al hacerle _click_ al siguiente  _link_ (porque hay que ejecutar ciertas líneas con un retraso entre sí) , ahí está [el código][the code]. Esto al parecer no es cierto, me ha funcionado | Although the sketch might not run properly when clicking on the following link (since there must be some delay between the execution of some lines) [the code] is there. This might not be true, sometimes it works|
-|el código completo también está en el [archivo][file] |the whole code is als at this [file]|
+|el código completo del boceto de hydra también está en el [archivo][file] |the whole hydra sketch code is als at this [file]|
 |||
 
 [file]: https://github.com/alvarobyrne/hydra-browserglue-johnny-five/blob/main/hydra-sketch.js
