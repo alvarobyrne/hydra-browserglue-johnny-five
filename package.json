@@ -1,0 +1,24 @@
+{
+  "name": "hydra-browserglue-johnny-five",
+  "version": "1.0.0",
+  "description": "[johnny-five]: http://johnny-five.io [hydra-web-app]:https://hydra.ojack.xyz/ [hydra-repo]:https://github.com/hydra-synth/hydra # hydra-browserglue-johnny-five ||| |-|-| |hydra  ([web][hydra-web-app], [repositorio][hydra-repo]) pegado a arduino usando [browserglue] y [johnny-five]; hydra controlado por arduino/ arduino controlando a hydra |hydra ([web app][hydra-web-app], [repo][hydra-repo]) glued with arduino using [browserglue] and [johnny-five]; hydra controlled by arduino/arduino controlling hydra| |||",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alvarobyrne/hydra-browserglue-johnny-five.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alvarobyrne/hydra-browserglue-johnny-five/issues"
+  },
+  "homepage": "https://github.com/alvarobyrne/hydra-browserglue-johnny-five#readme",
+  "devDependencies": {
+    "johnny-five": "^2.1.0",
+    "osc-min": "^1.1.2"
+  }
+}
