@@ -4,7 +4,7 @@
 # hydra-browserglue-johnny-five
 |||
 |-|-|
-|hydra  ([web][hydra-web-app], [repositorio][hydra-repo]) pegado a arduinou usando [browserglue] and [johnny-five]; hydra controlado por arduino/ arduino controlando a hydra |hydra ([web app][hydra-web-app], [repo][hydra-repo]) glued with arduino using [browserglue] and [johnny-five]; hydra controlled by arduino/arduino controlling hydra|
+|hydra  ([web][hydra-web-app], [repositorio][hydra-repo]) pegado a arduino usando [browserglue] and [johnny-five]; hydra controlado por arduino/ arduino controlando a hydra |hydra ([web app][hydra-web-app], [repo][hydra-repo]) glued with arduino using [browserglue] and [johnny-five]; hydra controlled by arduino/arduino controlling hydra|
 |||
 
 ## 1 browserglue: ejecutable / executable
