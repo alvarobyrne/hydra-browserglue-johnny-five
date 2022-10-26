@@ -1,4 +1,4 @@
-****[johnny-five]: http://johnny-five.io
+[johnny-five]: http://johnny-five.io
 [hydra-web-app]:https://hydra.ojack.xyz/
 [hydra-repo]:https://github.com/hydra-synth/hydra
 # hydra-browserglue-johnny-five
@@ -15,7 +15,7 @@
 |Aquí se usa [browserglue] un _software_ que expone varias conecciones OSC al navegador usando _websockets_ |Here [browserglue] is used, a software which "exposes multiple OSC connections to the browser through WebSockets"|
 |Para empezar, bajá el servidor de browserglue que es un ejecutable disponible mac/win/linux en [los _releases_ de browser glue][browserglue-executable]. |To begin with, download the browserglue server which is an executable available for win/mac/linux from their [releases page at github][browserglue-executable], |
 |Ejecutalo después de bajarlo, entonces se lanza el servidor que va a enrutar los mensajes de osc que generemos con johhny-five y los va a enviar vía _websockets_ al navegador, a hydra|One then has launched a server which will route OSC messages generated with johnny-five and send them via websockets to the browser, to hydra|
-|en windows bajar archivos ejecutables es dificil en cuanto que el sistema operative lanza advertencias y trata de impedir que bajés este tipo de archivos: toca confirmar varias veces que querés bajar el archivo y ejecutarlo|in windows, downloading executable files is not as straightforward: the operating system will try to prevent you and warn you at multiple steps that downloading such file is not recommended|
+|en windows bajar archivos ejecutables es dificil en cuanto que el sistema operativo lanza advertencias y trata de impedir que bajés este tipo de archivos: toca confirmar varias veces que querés bajar el archivo y ejecutarlo|in windows, downloading executable files is not as straightforward: the operating system will try to prevent you and warn you at multiple steps that downloading such file is not recommended|
 
 
 [browserglue]:https://github.com/munshkr/browserglue
@@ -114,7 +114,7 @@ channel = await bg.addChannel(address, senderPort);
 |||
 |-|-|
 |código encargado de escuchar los mensajes enviados por el canal y de usar el valor en un boceto de hydra  |code in charge of receiving the websocket messages and use the value received in hydra functions|
-|||
+||| 
 ```js
 pot=0
 norm = 1/1024;
