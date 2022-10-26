@@ -28,6 +28,7 @@
 |||
 |-|-|
 |Tenés que tener instalados `node` ( y `npm`, que se instala cuando se instala `node`)|must have `node` installed (and `npm` which is installed with `node`)|
+|Tenes que tener un arduino con el sketch de StandardFirmata cargado|You must have an arduino with the standard firmata sketch uploaded|
 |||
 
 ### 2.1
@@ -57,6 +58,7 @@ npm install
 
 |||
 |-|-|
+|En este punto debés conectar el arduino a tu computador/ordenador como habitualmente se hace a través de un puerto usb|At this point you must connect the arduino to your computer through a usb port|
 |y, en el archivo `index.js` (de este repositorio), se le adiciona el envío de mensajes OSC|and, at the `index.js` file (in this repo), OSC message sending has been added|
 | ejecutá el programa con el siguiente commando | run this file with the command line tool|
 |||
