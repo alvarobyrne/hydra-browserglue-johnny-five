@@ -13,7 +13,8 @@
 |||
 |-|-|
 |Aquí se usa [browserglue] un _software_ que expone varias conecciones OSC al navegador usando _websockets_ |Here [browserglue] is used, a software which "exposes multiple OSC connections to the browser through WebSockets"|
-|||
+|Para empezar, bajá el servidor de browserglue que es un ejecutable disponible mac/win/linux en [los _releases_ de browser glue][browserglue-executable]. |To begin with, download the browserglue server which is an executable available for win/mac/linux from their [releases page at github][browserglue-executable], |
+|Ejecutalo después de bajarlo, entonces se lanza el servidor que va a enrutar los mensajes de osc que generemos con johhny-five y los va a enviar vía _websockets_ al navegador, a hydra|One then has launched a server which will route OSC messages generated with johnny-five and send them via websockets to the browser, to hydra|
 
 
 [browserglue]:https://github.com/munshkr/browserglue
@@ -53,28 +54,33 @@ npm install
 
 ![potentiometer connected to arduino](http://johnny-five.io/img/breadboard/potentiometer.png)
 
-|y, en el archivo `index.js`, se le adiciona el envío de mensajes OSC|and, at the `index.js` file, OSC message sending is added|
-
 |||
 |-|-|
-| ejecute el programa con el siguiente commando | run this file with the command line tool|
+|y, en el archivo `index.js` (de este repositorio), se le adiciona el envío de mensajes OSC|and, at the `index.js` file (in this repo), OSC message sending has been added|
+| ejecutá el programa con el siguiente commando | run this file with the command line tool|
 |||
 
 ```
 node index.js
 ```
+|||
+|-|-|
+|ahí ya podés mover la perilla del potenciometro y se están enviando mensajes OSC con los valores del voltaje en el potencimetro|now one can move the potentiometers knob and OSC messages are being sent with|
+|a continuación se describe cómo recibir/escuchar esos mensajes en [hydra][hydra-web-app] |in what follows we explain how to listen/receive such messages in [hydra][hydra-web-app] |
+|||
+
 
 ## 3  hydra
 ### 3.0
 |||
 |-|-|
-|En esta sección el código que tenés que ejecutar en [hydra][hydra-web-app]| In this section is the code which must be executed at [hydra][hydra-web-app]|
+|En esta sección se presenta el código que tenés que ejecutar en [hydra][hydra-web-app]| In this section the code which must be executed at [hydra][hydra-web-app] is shown|
 |Ejecutá estas lineas una por una, si ejecutás todo el sketch de una, no te va a funcionar (esto tal vez no es cierto pero mejor hacelo así , ja ja)|Run this lines one by one, it won't work if you run all the sketch at once(this might not be true, but better do so, ha ha)|
 |||
 ### 3.1 
 |||
 |-|-|
-|Cargá `browserglue` en `hydra` corriendo la siguiente línea de código en ,esto es,  oprimí `ctrl+enter` con el cursor sobre la linea misma|Load `browserglue` into `hydra` running the following line of code, that is, press `ctrl+enter` with cursor caret on the line|
+|Cargá `browserglue` en `hydra` ejecutando la siguiente línea de código,esto es,  oprimí `ctrl+enter` con el cursor sobre la linea misma|Load `browserglue` into `hydra` running the following line of code, that is, press `ctrl+enter` with cursor caret on the line itself|
 |||
 
 ```js
@@ -93,7 +99,7 @@ window.bg = new browserglue.Client();
 ### 3.3
 |||
 |-|-|
-|Las siguientes lineas de código creán un canal de comunicación usando websockect que se comunica con el ejecutable de la sección 1.1 de este documento | The nex portion of code creates a browserglue channel that bridges with the executable refered at section 1.1 above|
+|Las siguientes lineas de código crean un canal de comunicación usando _websockects_ que se comunica con el ejecutable de la sección 1.1 de este documento | The next portion of code creates a browserglue channel that bridges with the executable refered at section 1.1 above|
 |los valores de la variables `address` y  `senderPort` deben coincidir con los valores de las mismas variables en el código del archivo  `index.js` |the values of variables `address` and `senderPort` must be the same as the values of the variableswith the same name in the `index.js` file.|
 |||
 
