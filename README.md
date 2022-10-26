@@ -28,8 +28,10 @@
 |||
 |-|-|
 |Tenés que tener instalados `node` ( y `npm`, que se instala cuando se instala `node`)|must have `node` installed (and `npm` which is installed with `node`)|
-|Tenes que tener un arduino con el sketch de StandardFirmata cargado|You must have an arduino with the standard firmata sketch uploaded|
+|Tenes que tener un arduino con el sketch de StandardFirmata cargado. Éste se encuentra en los ejemplos del _software_ de arduino, como se muestra en la imagen| You must have an arduino with the standard firmata sketch uploaded. It is found in the examples sketches of the arduino software, as shown in the figure|
 |||
+
+![](stantardfirmataplus-in-arduino-ide.jpg)
 
 ### 2.1
 
